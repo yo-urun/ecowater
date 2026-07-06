@@ -1,0 +1,61 @@
+Topic,Language,Keyword,Intent
+Health Benefits,EN,pure water health benefits,Informational
+Health Benefits,EN,benefits of purified water,Informational
+Health Benefits,EN,purified vs tap water,Informational
+Health Benefits,EN,health effects of clean water,Informational
+Health Benefits,RU,польза чистой воды,Informational
+Health Benefits,RU,преимущества очищенной воды,Informational
+Health Benefits,RU,очищенная вода против водопроводной,Informational
+Health Benefits,RU,влияние чистой воды на здоровье,Informational
+Health Benefits,SR,prednosti čiste vode,Informational
+Health Benefits,SR,benefiti filtrirane vode,Informational
+Health Benefits,SR,filtrirana voda naspram čukanske,Informational
+Health Benefits,SR,uticaj čiste vode na zdravlje,Informational
+Detox,EN,water detox for beginners,Educational
+Detox,EN,purified water for detox,Educational
+Detox,EN,how to detox with water,Educational
+Detox,EN,water fasting for detox,Educational
+Detox,RU,водный детокс для начинающих,Educational
+Detox,RU,очищенная вода для детокса,Educational
+Detox,RU,как очистить организм водой,Educational
+Detox,RU,водное голодание для детокса,Educational
+Detox,SR,vodeni detoks za početnike,Educational
+Detox,SR,filtrirana voda za detoksikaciju,Educational
+Detox,SR,kako očistiti organizam vodom,Educational
+Detox,SR,vodni post za detoks,Educational
+Hydration,EN,optimal daily hydration,Educational
+Hydration,EN,signs of dehydration,Educational
+Hydration,EN,best water for hydration,Educational
+Hydration,EN,cellular hydration pure water,Educational
+Hydration,RU,оптимальная норма воды в день,Educational
+Hydration,RU,признаки обезвоживания,Educational
+Hydration,RU,лучшая вода для гидратации,Educational
+Hydration,RU,клеточное увлажнение чистой водой,Educational
+Hydration,SR,optimalni dnevni unos vode,Educational
+Hydration,SR,znaci dehidratacije,Educational
+Hydration,SR,najbolja voda za hidrataciju,Educational
+Hydration,SR,ćelijska hidratacija čistom vodom,Educational
+Longevity,EN,water purity and longevity,Informational
+Longevity,EN,anti-aging water benefits,Informational
+Longevity,EN,hydration and lifespan,Informational
+Longevity,EN,pure water for healthy aging,Informational
+Longevity,RU,чистота воды и долголетие,Informational
+Longevity,RU,вода для замедления старения,Informational
+Longevity,RU,гидратация и продолжительность жизни,Informational
+Longevity,RU,чистая вода для здорового старения,Informational
+Longevity,SR,čistoća vode i dugovečnost,Informational
+Longevity,SR,voda za usporavanje starenja,Informational
+Longevity,SR,hidratacija i životni vek,Informational
+Longevity,SR,čista voda za zdravo starenje,Informational
+Skin & Hair,EN,pure water for glowing skin,Solution
+Skin & Hair,EN,how clean water affects hair,Solution
+Skin & Hair,EN,hydration for skin elasticity,Solution
+Skin & Hair,EN,drinking pure water for acne,Solution
+Skin & Hair,RU,чистая вода для сияния кожи,Solution
+Skin & Hair,RU,как чистая вода влияет на волосы,Solution
+Skin & Hair,RU,увлажнение для эластичности кожи,Solution
+Skin & Hair,RU,питье чистой воды при акне,Solution
+Skin & Hair,SR,čista voda za blistavu kožu,Solution
+Skin & Hair,SR,kako čista voda utiče na kosu,Solution
+Skin & Hair,SR,hidratacija za elastičnost kože,Solution
+Skin & Hair,SR,pijenje čiste vode protiv akni,Solution

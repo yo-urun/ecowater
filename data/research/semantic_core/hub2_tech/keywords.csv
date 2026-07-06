@@ -1,0 +1,193 @@
+Technology,Language,Category,Keyword,Intent
+Reverse Osmosis,EN,High,Reverse Osmosis,Commercial
+Reverse Osmosis,EN,High,RO system,Commercial
+Reverse Osmosis,EN,High,RO water filter,Commercial
+Reverse Osmosis,EN,High,water purification system,Commercial
+Reverse Osmosis,EN,Mid,Best RO system for home,Commercial
+Reverse Osmosis,EN,Mid,RO vs distilled water,Informational
+Reverse Osmosis,EN,Mid,RO water filter price,Commercial
+Reverse Osmosis,EN,Mid,under-sink RO system,Commercial
+Reverse Osmosis,EN,Long-tail,How to replace RO membrane,Informational
+Reverse Osmosis,EN,Long-tail,RO system for hard water,Commercial
+Reverse Osmosis,EN,Long-tail,does RO remove fluoride,Informational
+Reverse Osmosis,EN,Long-tail,RO water remineralization,Informational
+Reverse Osmosis,EN,Long-tail,reverse osmosis maintenance guide,Informational
+Reverse Osmosis,RU,High,Обратный осмос,Commercial
+Reverse Osmosis,RU,High,система обратного осмоса,Commercial
+Reverse Osmosis,RU,High,фильтр обратного осмоса,Commercial
+Reverse Osmosis,RU,High,очистка воды обратным осмосом,Commercial
+Reverse Osmosis,RU,Mid,Лучший осмос для дома,Commercial
+Reverse Osmosis,RU,Mid,обратный осмос или дистилляция,Informational
+Reverse Osmosis,RU,Mid,цена системы обратного осмоса,Commercial
+Reverse Osmosis,RU,Mid,подмойковый фильтр обратного осмоса,Commercial
+Reverse Osmosis,RU,Long-tail,Как заменить мембрану обратного осмоса,Informational
+Reverse Osmosis,RU,Long-tail,осмос для жесткой воды,Commercial
+Reverse Osmosis,RU,Long-tail,удаляет ли осмос фтор,Informational
+Reverse Osmosis,RU,Long-tail,минерализация воды после осмоса,Informational
+Reverse Osmosis,RU,Long-tail,обслуживание системы обратного осмоса,Informational
+Reverse Osmosis,SR,High,Reverzna osmoza,Commercial
+Reverse Osmosis,SR,High,sistem reverzne osmoze,Commercial
+Reverse Osmosis,SR,High,filter za reverznu osmozu,Commercial
+Reverse Osmosis,SR,High,prečišćavanje vode reverznom osmozom,Commercial
+Reverse Osmosis,SR,Mid,Najbolji sistem reverzne osmoze za dom,Commercial
+Reverse Osmosis,SR,Mid,reverzna osmoza vs destilovana voda,Informational
+Reverse Osmosis,SR,Mid,cena filtera za reverznu osmozu,Commercial
+Reverse Osmosis,SR,Mid,sistem reverzne osmoze ispod sudopere,Commercial
+Reverse Osmosis,SR,Long-tail,Kako zameniti membranu za reverznu osmozu,Informational
+Reverse Osmosis,SR,Long-tail,sistem reverzne osmoze za tvrdu vodu,Commercial
+Reverse Osmosis,SR,Long-tail,da li reverzna osmoza uklanja fluor,Informational
+Reverse Osmosis,SR,Long-tail,remineralizacija vode nakon osmoze,Informational
+Reverse Osmosis,SR,Long-tail,održavanje sistema reverzne osmoze,Informational
+UV Sterilization,EN,High,UV water sterilization,Commercial
+UV Sterilization,EN,High,UV water filter,Commercial
+UV Sterilization,EN,High,Ultraviolet water purifier,Commercial
+UV Sterilization,EN,Mid,Best UV water filter for home,Commercial
+UV Sterilization,EN,Mid,UV vs RO for bacteria,Informational
+UV Sterilization,EN,Mid,UV sterilizer price,Commercial
+UV Sterilization,EN,Mid,UV water treatment system,Commercial
+UV Sterilization,EN,Long-tail,How does UV water sterilization work,Informational
+UV Sterilization,EN,Long-tail,UV lamp replacement for water filter,Informational
+UV Sterilization,EN,Long-tail,UV water filter for well water,Commercial
+UV Sterilization,EN,Long-tail,is UV water sterilization safe,Informational
+UV Sterilization,EN,Long-tail,UV-C water disinfection,Informational
+UV Sterilization,RU,High,УФ стерилизация воды,Commercial
+UV Sterilization,RU,High,ультрафиолетовый фильтр для воды,Commercial
+UV Sterilization,RU,High,УФ-очиститель воды,Commercial
+UV Sterilization,RU,Mid,Лучший УФ фильтр для дома,Commercial
+UV Sterilization,RU,Mid,УФ или осмос против бактерий,Informational
+UV Sterilization,RU,Mid,цена УФ стерилизатора,Commercial
+UV Sterilization,RU,Mid,система УФ обеззараживания воды,Commercial
+UV Sterilization,RU,Long-tail,Как работает УФ стерилизация воды,Informational
+UV Sterilization,RU,Long-tail,замена УФ лампы в фильтре,Informational
+UV Sterilization,RU,Long-tail,УФ фильтр для скважины,Commercial
+UV Sterilization,RU,Long-tail,безопасна ли УФ стерилизация,Informational
+UV Sterilization,RU,Long-tail,обеззараживание воды УФ-излучением,Informational
+UV Sterilization,SR,High,UV sterilizacija vode,Commercial
+UV Sterilization,SR,High,UV filter za vodu,Commercial
+UV Sterilization,SR,High,ultravioletni prečišćivač vode,Commercial
+UV Sterilization,SR,Mid,Najbolji UV filter za vodu za dom,Commercial
+UV Sterilization,SR,Mid,UV vs RO za bakterije,Informational
+UV Sterilization,SR,Mid,cena UV sterilizatora,Commercial
+UV Sterilization,SR,Mid,sistem za UV tretman vode,Commercial
+UV Sterilization,SR,Long-tail,Kako funkcioniše UV sterilizacija vode,Informational
+UV Sterilization,SR,Long-tail,zamena UV lampe za filter vode,Informational
+UV Sterilization,SR,Long-tail,UV filter za vodu iz bunara,Commercial
+UV Sterilization,SR,Long-tail,da li je UV sterilizacija vode bezbedna,Informational
+UV Sterilization,SR,Long-tail,UV-C dezinfekcija vode,Informational
+Activated Carbon,EN,High,Activated carbon filter,Commercial
+Activated Carbon,EN,High,carbon water filter,Commercial
+Activated Carbon,EN,High,GAC filter,Commercial
+Activated Carbon,EN,High,block carbon filter,Commercial
+Activated Carbon,EN,Mid,Best carbon water filter,Commercial
+Activated Carbon,EN,Mid,activated carbon vs RO,Informational
+Activated Carbon,EN,Mid,carbon filter for chlorine removal,Commercial
+Activated Carbon,EN,Mid,how often to change carbon filter,Informational
+Activated Carbon,EN,Long-tail,Coconut shell activated carbon water filter,Commercial
+Activated Carbon,EN,Long-tail,activated carbon for VOC removal,Informational
+Activated Carbon,EN,Long-tail,carbon block vs GAC,Informational
+Activated Carbon,EN,Long-tail,does carbon filter remove lead,Informational
+Activated Carbon,EN,Long-tail,lifespan of activated carbon filter,Informational
+Activated Carbon,RU,High,Угольный фильтр,Commercial
+Activated Carbon,RU,High,фильтр с активированным углем,Commercial
+Activated Carbon,RU,High,угольный блок,Commercial
+Activated Carbon,RU,High,фильтрация активированным углем,Commercial
+Activated Carbon,RU,Mid,Лучший угольный фильтр,Commercial
+Activated Carbon,RU,Mid,угольный фильтр или осмос,Informational
+Activated Carbon,RU,Mid,угольный фильтр для удаления хлора,Commercial
+Activated Carbon,RU,Mid,как часто менять угольный фильтр,Informational
+Activated Carbon,RU,Long-tail,Угольный фильтр из скорлупы кокоса,Commercial
+Activated Carbon,RU,Long-tail,активированный уголь для удаления летучих органических соединений,Informational
+Activated Carbon,RU,Long-tail,угольный блок или гранулированный уголь,Informational
+Activated Carbon,RU,Long-tail,удаляет ли угольный фильтр свинец,Informational
+Activated Carbon,RU,Long-tail,срок службы угольного фильтра,Informational
+Activated Carbon,SR,High,Filter aktivnog uglja,Commercial
+Activated Carbon,SR,High,filter sa aktivnim ugljem,Commercial
+Activated Carbon,SR,High,blok filter od uglja,Commercial
+Activated Carbon,SR,High,filtracija aktivnim ugljem,Commercial
+Activated Carbon,SR,Mid,Najbolji filter aktivnog uglja,Commercial
+Activated Carbon,SR,Mid,aktivni ugalj vs RO,Informational
+Activated Carbon,SR,Mid,filter aktivnog uglja za uklanjanje hlora,Commercial
+Activated Carbon,SR,Mid,koliko često menjati filter aktivnog uglja,Informational
+Activated Carbon,SR,Long-tail,Filter aktivnog uglja od kokosovih ljusaka,Commercial
+Activated Carbon,SR,Long-tail,aktivni ugalj za uklanjanje VOC-a,Informational
+Activated Carbon,SR,Long-tail,blok karbon vs GAC,Informational
+Activated Carbon,SR,Long-tail,da li filter aktivnog uglja uklanja olovo,Informational
+Activated Carbon,SR,Long-tail,životni vek filtera aktivnog uglja,Informational
+Ion Exchange,EN,High,Ion exchange water softener,Commercial
+Ion Exchange,EN,High,water softener system,Commercial
+Ion Exchange,EN,High,deionization filter,Commercial
+Ion Exchange,EN,High,resin water filter,Commercial
+Ion Exchange,EN,Mid,Best water softener for hard water,Commercial
+Ion Exchange,EN,Mid,ion exchange vs reverse osmosis,Informational
+Ion Exchange,EN,Mid,ion exchange resin regeneration,Informational
+Ion Exchange,EN,Mid,cost of ion exchange system,Commercial
+Ion Exchange,EN,Long-tail,Cation vs anion exchange resin,Informational
+Ion Exchange,EN,Long-tail,how ion exchange removes calcium,Informational
+Ion Exchange,EN,Long-tail,salt-free water softener,Commercial
+Ion Exchange,EN,Long-tail,ion exchange for nitrate removal,Informational
+Ion Exchange,EN,Long-tail,industrial ion exchange systems,Commercial
+Ion Exchange,RU,High,Ионообменный фильтр,Commercial
+Ion Exchange,RU,High,умягчитель воды,Commercial
+Ion Exchange,RU,High,система деионизации,Commercial
+Ion Exchange,RU,High,смоляной фильтр для воды,Commercial
+Ion Exchange,RU,Mid,Лучший умягчитель для жесткой воды,Commercial
+Ion Exchange,RU,Mid,ионообмен или осмос,Informational
+Ion Exchange,RU,Mid,регенерация ионообменной смолы,Informational
+Ion Exchange,RU,Mid,стоимость системы ионообменной очистки,Commercial
+Ion Exchange,RU,Long-tail,Катионообменная и анионообменная смола,Informational
+Ion Exchange,RU,Long-tail,как ионообмен удаляет кальций,Informational
+Ion Exchange,RU,Long-tail,безсолевой умягчитель воды,Commercial
+Ion Exchange,RU,Long-tail,ионообмен для удаления нитратов,Informational
+Ion Exchange,RU,Long-tail,промышленные ионообменные установки,Commercial
+Ion Exchange,SR,High,Jon-razmenjivač za vodu,Commercial
+Ion Exchange,SR,High,omekšivač vode,Commercial
+Ion Exchange,SR,High,sistem dejonizacije,Commercial
+Ion Exchange,SR,High,smola za filtriranje vode,Commercial
+Ion Exchange,SR,Mid,Najbolji omekšivač za tvrdu vodu,Commercial
+Ion Exchange,SR,Mid,jon-razmena vs reverzna osmoza,Informational
+Ion Exchange,SR,Mid,regeneracija jon-razmenjivačke smole,Informational
+Ion Exchange,SR,Mid,cena sistema za jon-razmenu,Commercial
+Ion Exchange,SR,Long-tail,Kationi vs anioni razmena smola,Informational
+Ion Exchange,SR,Long-tail,kako jon-razmena uklanja kalcijum,Informational
+Ion Exchange,SR,Long-tail,omekšivač vode bez soli,Commercial
+Ion Exchange,SR,Long-tail,jon-razmena za uklanjanje nitrata,Informational
+Ion Exchange,SR,Long-tail,industrijski sistemi za jon-razmenu,Commercial
+Smart Sensors,EN,High,Smart water sensors,Commercial
+Smart Sensors,EN,High,water quality monitoring,Commercial
+Smart Sensors,EN,High,IoT water filter,Commercial
+Smart Sensors,EN,High,smart water leak detector,Commercial
+Smart Sensors,EN,Mid,Best smart water quality monitor,Commercial
+Smart Sensors,EN,Mid,real-time TDS sensor,Commercial
+Smart Sensors,EN,Mid,smart filter replacement alert,Commercial
+Smart Sensors,EN,Mid,connected water purification,Commercial
+Smart Sensors,EN,Long-tail,Smart sensors for pH and conductivity,Informational
+Smart Sensors,EN,Long-tail,integrating water sensors with smart home,Informational
+Smart Sensors,EN,Long-tail,Wi-Fi water quality sensor for RO,Commercial
+Smart Sensors,EN,Long-tail,predictive maintenance for water filters,Informational
+Smart Sensors,EN,Long-tail,water quality API for home automation,Informational
+Smart Sensors,RU,High,Умные датчики воды,Commercial
+Smart Sensors,RU,High,мониторинг качества воды,Commercial
+Smart Sensors,RU,High,IoT фильтр для воды,Commercial
+Smart Sensors,RU,High,умный датчик протечки,Commercial
+Smart Sensors,RU,Mid,Лучший умный монитор качества воды,Commercial
+Smart Sensors,RU,Mid,датчик TDS в реальном времени,Commercial
+Smart Sensors,RU,Mid,умное уведомление о замене фильтра,Commercial
+Smart Sensors,RU,Mid,подключенная система очистки,Commercial
+Smart Sensors,RU,Long-tail,Умные датчики pH и проводимости,Informational
+Smart Sensors,RU,Long-tail,интеграция датчиков воды в умный дом,Informational
+Smart Sensors,RU,Long-tail,Wi-Fi датчик качества воды для осмоса,Commercial
+Smart Sensors,RU,Long-tail,предиктивное обслуживание фильтров,Informational
+Smart Sensors,RU,Long-tail,API качества воды для домашней автоматизации,Informational
+Smart Sensors,SR,High,Pametni senzori za vodu,Commercial
+Smart Sensors,SR,High,monitoring kvaliteta vode,Commercial
+Smart Sensors,SR,High,IoT filter za vodu,Commercial
+Smart Sensors,SR,High,pametni detektor curenja vode,Commercial
+Smart Sensors,SR,Mid,Najbolji pametni monitor kvaliteta vode,Commercial
+Smart Sensors,SR,Mid,TDS senzor u realnom vremenu,Commercial
+Smart Sensors,SR,Mid,pametno obaveštenje za zamenu filtera,Commercial
+Smart Sensors,SR,Mid,povezani sistemi za prečišćavanje vode,Commercial
+Smart Sensors,SR,Long-tail,Pametni senzori za pH i provodljivost,Informational
+Smart Sensors,SR,Long-tail,integracija senzora vode u pametni dom,Informational
+Smart Sensors,SR,Long-tail,Wi-Fi senzor kvaliteta vode za RO,Commercial
+Smart Sensors,SR,Long-tail,prediktivno održavanje filtera,Informational
+Smart Sensors,SR,Long-tail,API kvaliteta vode za automatizaciju doma,Informational

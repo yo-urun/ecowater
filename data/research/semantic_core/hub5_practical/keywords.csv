@@ -1,0 +1,59 @@
+Keyword,Language,Level,Intent,Priority
+Жесткая вода,RU,High,Informational,High
+Очистка воды,RU,High,Informational,High
+Фильтры для воды,RU,High,Commercial,High
+Умягчение воды,RU,Mid,Commercial,High
+Удаление накипи,RU,Mid,Informational,Medium
+Системы обратного осмоса,RU,Mid,Commercial,High
+Фильтр под мойку,RU,Mid,Transactional,Medium
+Очистка воды в квартире,RU,Mid,Commercial,Medium
+как избавиться от накипи в чайнике,RU,Long-tail,Informational,Medium
+почему вода оставляет белый налет,RU,Long-tail,Informational,Low
+влияние жесткой воды на кожу и волосы,RU,Long-tail,Informational,Medium
+инструкция по установке фильтра обратного осмоса,RU,Long-tail,Utility,High
+ошибки при монтаже системы водоочистки,RU,Long-tail,Utility,High
+как выбрать фильтр для жесткой воды,RU,Long-tail,Commercial,Medium
+график замены картриджей для воды,RU,Long-tail,Utility,High
+как промыть фильтр для воды,RU,Long-tail,Utility,Medium
+признаки износа мембраны осмоса,RU,Long-tail,Utility,Medium
+стоимость установки системы очистки воды,RU,Long-tail,Commercial,Medium
+окупаемость домашнего фильтра против бутилированной воды,RU,Long-tail,Commercial,High
+Hard water,EN,High,Informational,High
+Water purification,EN,High,Informational,High
+Water filtration,EN,High,Commercial,High
+Water softening,EN,Mid,Commercial,High
+Limescale removal,EN,Mid,Informational,Medium
+Reverse osmosis (RO),EN,Mid,Commercial,High
+Whole-house water system,EN,Mid,Commercial,Medium
+Under-sink filters,EN,Mid,Transactional,Medium
+how to remove limescale from dishwasher,EN,Long-tail,Informational,Medium
+hard water effects on skin and hair,EN,Long-tail,Informational,Medium
+signs of hard water in home,EN,Long-tail,Informational,Low
+DIY water softener installation guide,EN,Long-tail,Utility,High
+under-sink RO system setup,EN,Long-tail,Utility,High
+best tools for water filter installation,EN,Long-tail,Utility,Medium
+RO filter maintenance checklist,EN,Long-tail,Utility,High
+how often to change water filter cartridges,EN,Long-tail,Utility,High
+water softener salt types and replacement,EN,Long-tail,Utility,Medium
+cost of bottled water vs home filtration 5 year analysis,EN,Long-tail,Commercial,High
+water softener energy consumption cost,EN,Long-tail,Informational,Low
+TCO of reverse osmosis systems,EN,Long-tail,Commercial,High
+Tvrda voda,SR,High,Informational,High
+Prečišćavanje vode,SR,High,Informational,High
+Filteri za vodu,SR,High,Commercial,High
+Omekšavanje vode,SR,Mid,Commercial,High
+Uklanjanje kamenca,SR,Mid,Informational,Medium
+Reversna osmoza,SR,Mid,Commercial,High
+Kućni sistemi za vodu,SR,Mid,Commercial,Medium
+Filteri ispod sudopere,SR,Mid,Transactional,Medium
+kako ukloniti kamenac iz bojlera,SR,Long-tail,Informational,Medium
+simptomi tvrde vode u stanu,SR,Long-tail,Informational,Low
+da li je tvrda voda loša za kosu,SR,Long-tail,Informational,Medium
+uputstvo za ugradnju filtera za vodu,SR,Long-tail,Utility,High
+instalacija sistema za prečišćavanje vode cena,SR,Long-tail,Commercial,Medium
+kako povezati filter ispod sudopere,SR,Long-tail,Utility,High
+zamena filtera za vodu termin,SR,Long-tail,Utility,High
+održavanje omekšivača vode tablet soli,SR,Long-tail,Utility,Medium
+čišćenje filtera za vodu,SR,Long-tail,Utility,Medium
+cena sistema za prečišćavanje vode u srbiji,SR,Long-tail,Commercial,Medium
+ušteda novca pomoću filtera za vodu,SR,Long-tail,Commercial,High

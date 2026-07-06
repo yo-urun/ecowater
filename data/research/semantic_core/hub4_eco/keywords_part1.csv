@@ -1,0 +1,49 @@
+Topic,Keyword,Language,Intent
+Zero-Waste,zero waste lifestyle,EN,Informational
+Zero-Waste,zero waste products,EN,Commercial
+Zero-Waste,how to go zero waste,EN,Informational
+Zero-Waste,zero waste guide,EN,Informational
+Zero-Waste,ноль отходов,RU,Informational
+Zero-Waste,безотходная жизнь,RU,Informational
+Zero-Waste,товары zero waste,RU,Commercial
+Zero-Waste,как начать zero waste,RU,Informational
+Zero-Waste,nula otpada,SR,Informational
+Zero-Waste,život bez otpada,SR,Informational
+Zero-Waste,zero waste proizvodi,SR,Commercial
+Zero-Waste,kako započeti zero waste,SR,Informational
+Plastic-Free,plastic free alternatives,EN,Commercial
+Plastic-Free,plastic free bathroom,EN,Commercial
+Plastic-Free,plastic free kitchen,EN,Commercial
+Plastic-Free,avoid single use plastic,EN,Informational
+Plastic-Free,жизнь без пластика,RU,Informational
+Plastic-Free,альтернативы пластику,RU,Commercial
+Plastic-Free,дом без пластика,RU,Commercial
+Plastic-Free,отказ от одноразового пластика,RU,Informational
+Plastic-Free,život bez plastike,SR,Informational
+Plastic-Free,alternative plastici,SR,Commercial
+Plastic-Free,dom bez plastike,SR,Commercial
+Plastic-Free,odricanje od plastike,SR,Informational
+Eco-friendly Home,eco friendly home,EN,Commercial
+Eco-friendly Home,sustainable living tips,EN,Informational
+Eco-friendly Home,energy efficient home,EN,Informational
+Eco-friendly Home,sustainable home decor,EN,Commercial
+Eco-friendly Home,экологичный дом,RU,Commercial
+Eco-friendly Home,устойчивый образ жизни,RU,Informational
+Eco-friendly Home,энергоэффективный дом,RU,Informational
+Eco-friendly Home,эко-дизайн интерьера,RU,Commercial
+Eco-friendly Home,ekološki dom,SR,Commercial
+Eco-friendly Home,održivi način života,SR,Informational
+Eco-friendly Home,energetski efikasan dom,SR,Informational
+Eco-friendly Home,ekološki enterijer,SR,Commercial
+Carbon Footprint,carbon footprint calculator,EN,Transactional
+Carbon Footprint,reduce carbon footprint,EN,Informational
+Carbon Footprint,personal carbon footprint,EN,Informational
+Carbon Footprint,carbon offset,EN,Transactional
+Carbon Footprint,углеродный след,RU,Informational
+Carbon Footprint,калькулятор углеродного следа,RU,Transactional
+Carbon Footprint,как уменьшить углеродный след,RU,Informational
+Carbon Footprint,компенсация углерода,RU,Transactional
+Carbon Footprint,ugljenični otisak,SR,Informational
+Carbon Footprint,kalkulator ugljičnog otiska,SR,Transactional
+Carbon Footprint,smanjenje ugljičnog otiska,SR,Informational
+Carbon Footprint,kompenzacija ugljenika,SR,Transactional

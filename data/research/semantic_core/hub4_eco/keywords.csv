@@ -1,0 +1,155 @@
+Topic,Level,Language,Keyword,Intent
+Zero-Waste,High,EN,Zero waste,Informational
+Zero-Waste,High,EN,Waste-free living,Informational
+Zero-Waste,High,EN,Sustainable lifestyle,Informational
+Zero-Waste,High,RU,Нулевые отходы,Informational
+Zero-Waste,High,RU,Безотходный образ жизни,Informational
+Zero-Waste,High,RU,Экологичный образ жизни,Informational
+Zero-Waste,High,SR,Zero waste,Informational
+Zero-Waste,High,SR,Život bez otpada,Informational
+Zero-Waste,High,SR,Nulti otpad,Informational
+Zero-Waste,High,SR,Održivi život,Informational
+Zero-Waste,Mid,EN,Zero waste home,Informational
+Zero-Waste,Mid,EN,Zero waste kitchen,Informational
+Zero-Waste,Mid,EN,Zero waste bathroom,Informational
+Zero-Waste,Mid,EN,Zero waste for beginners,Informational
+Zero-Waste,Mid,EN,Zero waste shopping,Commercial
+Zero-Waste,Mid,RU,Безотходный дом,Informational
+Zero-Waste,Mid,RU,Кухня без отходов,Informational
+Zero-Waste,Mid,RU,Ванная без отходов,Informational
+Zero-Waste,Mid,RU,Zero waste для начинающих,Informational
+Zero-Waste,Mid,RU,Осознанные покупки,Commercial
+Zero-Waste,Mid,SR,Zero waste dom,Informational
+Zero-Waste,Mid,SR,Kuhinja bez otpada,Informational
+Zero-Waste,Mid,SR,Kupovina u rinfuzi,Commercial
+Zero-Waste,Mid,SR,Zero waste za početnike,Informational
+Zero-Waste,Mid,SR,Održiva potrošnja,Commercial
+Zero-Waste,Long,EN,How to start zero waste on a budget,Informational
+Zero-Waste,Long,EN,Best zero waste alternatives for plastic,Commercial
+Zero-Waste,Long,EN,DIY zero waste cleaning products,Informational
+Zero-Waste,Long,EN,Composting for apartment dwellers,Informational
+Zero-Waste,Long,EN,Zero waste meal planning,Informational
+Zero-Waste,Long,RU,Как начать zero waste с ограниченным бюджетом,Informational
+Zero-Waste,Long,RU,Альтернативы пластику для дома,Commercial
+Zero-Waste,Long,RU,Как сделать домашние эко-средства для уборки,Informational
+Zero-Waste,Long,RU,Компостирование в квартире,Informational
+Zero-Waste,Long,RU,Планирование питания без отходов,Informational
+Zero-Waste,Long,SR,Kako započeti život bez otpada sa malim budžetom,Informational
+Zero-Waste,Long,SR,Alternative plastici za svaki dan,Commercial
+Zero-Waste,Long,SR,Recepti za prirodna sredstva za čišćenje,Informational
+Zero-Waste,Long,SR,Kompostiranje u stanu,Informational
+Zero-Waste,Long,SR,Planiranje obroka bez otpada,Informational
+Plastic-Free,High,EN,Plastic-free,Informational
+Plastic-Free,High,EN,End plastic pollution,Informational
+Plastic-Free,High,EN,Plastic-free living,Informational
+Plastic-Free,High,RU,Без пластика,Informational
+Plastic-Free,High,RU,Отказ от пластика,Informational
+Plastic-Free,High,RU,Борьба с пластиковым загрязнением,Informational
+Plastic-Free,High,SR,Bez plastike,Informational
+Plastic-Free,High,SR,Život bez plastike,Informational
+Plastic-Free,High,SR,Smanjenje plastičnog otpada,Informational
+Plastic-Free,Mid,EN,Plastic-free alternatives,Commercial
+Plastic-Free,Mid,EN,Plastic-free packaging,Commercial
+Plastic-Free,Mid,EN,Plastic-free bathroom,Commercial
+Plastic-Free,Mid,EN,Plastic-free kitchen,Commercial
+Plastic-Free,Mid,RU,Альтернативы пластику,Commercial
+Plastic-Free,Mid,RU,Упаковка без пластика,Commercial
+Plastic-Free,Mid,RU,Ванная без пластика,Commercial
+Plastic-Free,Mid,RU,Кухня без пластика,Commercial
+Plastic-Free,Mid,SR,Alternative plastici,Commercial
+Plastic-Free,Mid,SR,Ambalaža bez plastike,Commercial
+Plastic-Free,Mid,SR,Kupatilo bez plastike,Commercial
+Plastic-Free,Mid,SR,Kuhinja bez plastike,Commercial
+Plastic-Free,Long,EN,Plastic-free shampoo bars reviews,Commercial
+Plastic-Free,Long,EN,Biodegradable alternatives to plastic wrap,Commercial
+Plastic-Free,Long,EN,Plastic-free toothpaste tablets,Commercial
+Plastic-Free,Long,EN,How to avoid microplastics in cosmetics,Informational
+Plastic-Free,Long,EN,Plastic-free grocery shopping guide,Informational
+Plastic-Free,Long,RU,Обзор твердых шампуней без пластика,Commercial
+Plastic-Free,Long,RU,Биоразлагаемая альтернатива пищевой пленке,Commercial
+Plastic-Free,Long,RU,Зубная паста в таблетках отзывы,Commercial
+Plastic-Free,Long,RU,Как избежать микропластика в косметике,Informational
+Plastic-Free,Long,RU,Гайд по покупкам без пластиковых пакетов,Informational
+Plastic-Free,Long,SR,Recenzije šampona u komadu bez plastike,Commercial
+Plastic-Free,Long,SR,Biorazgradive alternative plastičnoj foliji,Commercial
+Plastic-Free,Long,SR,Tablete za zube bez plastike,Commercial
+Plastic-Free,Long,SR,Kako izbeći mikroplastiku u kozmetici,Informational
+Plastic-Free,Long,SR,Vodič za kupovinu bez plastičnih kesa,Informational
+Eco-Home,High,EN,Eco-friendly home,Informational
+Eco-Home,High,EN,Sustainable home,Informational
+Eco-Home,High,EN,Green living,Informational
+Eco-Home,High,RU,Экологичный дом,Informational
+Eco-Home,High,RU,Устойчивый дом,Informational
+Eco-Home,High,RU,Зеленое жилье,Informational
+Eco-Home,High,SR,Ekološki dom,Informational
+Eco-Home,High,SR,Održiva kuća,Informational
+Eco-Home,High,SR,Zeleni život,Informational
+Eco-Home,Mid,EN,Eco-friendly home decor,Commercial
+Eco-Home,Mid,EN,Sustainable building materials,Commercial
+Eco-Home,Mid,EN,Energy efficient home,Informational
+Eco-Home,Mid,EN,Eco-friendly cleaning,Commercial
+Eco-Home,Mid,EN,Green home design,Informational
+Eco-Home,Mid,RU,Эко-декор для дома,Commercial
+Eco-Home,Mid,RU,Экологичные строительные материалы,Commercial
+Eco-Home,Mid,RU,Энергоэффективный дом,Informational
+Eco-Home,Mid,RU,Экологичная уборка,Commercial
+Eco-Home,Mid,RU,Дизайн зеленого дома,Informational
+Eco-Home,Mid,SR,Ekološki dekor za dom,Commercial
+Eco-Home,Mid,SR,Održivi građevinski materijali,Commercial
+Eco-Home,Mid,SR,Energetski efikasan dom,Informational
+Eco-Home,Mid,SR,Ekološko čišćenje,Commercial
+Eco-Home,Mid,SR,Dizajn ekološkog doma,Informational
+Eco-Home,Long,EN,Best non-toxic paints for nursery,Commercial
+Eco-Home,Long,EN,Sustainable flooring options for living room,Commercial
+Eco-Home,Long,EN,How to reduce energy consumption at home,Informational
+Eco-Home,Long,EN,Indoor plants for air purification,Informational
+Eco-Home,Long,EN,Eco-friendly lighting solutions,Commercial
+Eco-Home,Long,RU,Лучшие нетоксичные краски для детской,Commercial
+Eco-Home,Long,RU,Экологичные варианты напольных покрытий,Commercial
+Eco-Home,Long,RU,Как снизить потребление электроэнергии дома,Informational
+Eco-Home,Long,RU,Комнатные растения для очистки воздуха,Informational
+Eco-Home,Long,RU,Эко-решения для освещения,Commercial
+Eco-Home,Long,SR,Najbolje netoksične boje za zidove,Commercial
+Eco-Home,Long,SR,Održive opcije za podove u dnevnom boravku,Commercial
+Eco-Home,Long,SR,Kako smanjiti potrošnju energije u domu,Informational
+Eco-Home,Long,SR,Sobne biljke za prečišćavanje vazduha,Informational
+Eco-Home,Long,SR,Ekološka rešenja za osvetljenje,Commercial
+Carbon,High,EN,Carbon footprint,Informational
+Carbon,High,EN,Carbon offset,Informational
+Carbon,High,EN,Climate change,Informational
+Carbon,High,RU,Углеродный след,Informational
+Carbon,High,RU,Компенсация углеродного следа,Informational
+Carbon,High,RU,Изменение климата,Informational
+Carbon,High,SR,Karbonov otisak,Informational
+Carbon,High,SR,Kompenzacija karbonovog otiska,Informational
+Carbon,High,SR,Klimatske promene,Informational
+Carbon,Mid,EN,Carbon footprint calculator,Informational
+Carbon,Mid,EN,Reducing carbon footprint,Informational
+Carbon,Mid,EN,Personal carbon footprint,Informational
+Carbon,Mid,EN,Corporate carbon footprint,Informational
+Carbon,Mid,EN,Carbon neutral living,Informational
+Carbon,Mid,RU,Калькулятор углеродного следа,Informational
+Carbon,Mid,RU,Снижение углеродного следа,Informational
+Carbon,Mid,RU,Личный углеродный след,Informational
+Carbon,Mid,RU,Углеродный след компании,Informational
+Carbon,Mid,RU,Углеродно-нейтральная жизнь,Informational
+Carbon,Mid,SR,Kalkulator karbonovog otiska,Informational
+Carbon,Mid,SR,Smanjenje karbonovog otiska,Informational
+Carbon,Mid,SR,Lični karbonov otisak,Informational
+Carbon,Mid,SR,Karbonov otisak kompanije,Informational
+Carbon,Mid,SR,Karbon-neutralan život,Informational
+Carbon,Long,EN,How to calculate carbon footprint of food,Informational
+Carbon,Long,EN,Best carbon offset programs 2026,Commercial
+Carbon,Long,EN,Impact of fast fashion on carbon footprint,Informational
+Carbon,Long,EN,Reducing carbon footprint through plant-based diet,Informational
+Carbon,Long,EN,Low carbon travel tips,Informational
+Carbon,Long,RU,Как рассчитать углеродный след продуктов питания,Informational
+Carbon,Long,RU,Лучшие программы компенсации углерода 2026,Commercial
+Carbon,Long,RU,Влияние быстрой моды на углеродный след,Informational
+Carbon,Long,RU,Снижение углеродного следа через растительную диету,Informational
+Carbon,Long,RU,Советы по путешествиям с низким углеродным следом,Informational
+Carbon,Long,SR,Kako izračunati karbonov otisak hrane,Informational
+Carbon,Long,SR,Najbolji programi za kompenzaciju karbona 2026,Commercial
+Carbon,Long,SR,Uticaj brze mode na karbonov otisak,Informational
+Carbon,Long,SR,Smanjenje karbonovog otiska putom biljnih dijeta,Informational
+Carbon,Long,SR,Saveti za putovanja sa niskim karbonovim otiskom,Informational

@@ -1,0 +1,76 @@
+Language,Toxin,Keyword,Type,Intent
+EN,PFAS,PFAS drinking water,High,Informational
+EN,PFAS,PFAS water filter,Mid,Transactional
+EN,PFAS,How to remove PFAS from water,Long,Informational
+EN,PFAS,Best filter for PFOA PFOS,Long,Transactional
+EN,PFAS,Are forever chemicals in my water,Long,Informational
+EN,Microplastics,Microplastics in water,High,Informational
+EN,Microplastics,microplastic water filter,Mid,Transactional
+EN,Microplastics,remove microplastics from tap water,Long,Informational
+EN,Microplastics,microplastics in bottled vs tap water,Long,Informational
+EN,Microplastics,health risks of microplastics,Long,Informational
+EN,Heavy Metals,Heavy metals in water,High,Informational
+EN,Heavy Metals,lead water filter,Mid,Transactional
+EN,Heavy Metals,how to remove mercury from water,Long,Informational
+EN,Heavy Metals,arsenic water contamination,Mid,Informational
+EN,Heavy Metals,heavy metal water test,Mid,Transactional
+EN,Chlorine,Chlorine in tap water,High,Informational
+EN,Chlorine,chloramine removal filter,Mid,Transactional
+EN,Chlorine,difference between chlorine and chloramine,Long,Informational
+EN,Chlorine,remove chlorine smell from water,Long,Informational
+EN,Chlorine,carbon filter for chloramines,Mid,Transactional
+EN,Pharmaceuticals,Pharmaceuticals in drinking water,High,Informational
+EN,Pharmaceuticals,remove hormones from water,Mid,Transactional
+EN,Pharmaceuticals,drug residues in tap water,Mid,Informational
+EN,Pharmaceuticals,endocrine disruptors water filtration,Long,Transactional
+EN,Pharmaceuticals,antibiotics in water health effects,Long,Informational
+RU,PFAS,ПФАС в воде,High,Informational
+RU,PFAS,фильтр от ПФАС,Mid,Transactional
+RU,PFAS,как очистить воду от ПФАС,Long,Informational
+RU,PFAS,лучший фильтр от вечных химикатов,Long,Transactional
+RU,PFAS,вред ПФАС для здоровья,Long,Informational
+RU,Microplastics,Микропластик в воде,High,Informational
+RU,Microplastics,фильтр от микропластика,Mid,Transactional
+RU,Microplastics,как убрать микропластик из воды,Long,Informational
+RU,Microplastics,микропластик в бутилированной воде,Long,Informational
+RU,Microplastics,вред микропластика для организма,Long,Informational
+RU,Heavy Metals,Тяжелые металлы в воде,High,Informational
+RU,Heavy Metals,фильтр от свинца,Mid,Transactional
+RU,Heavy Metals,как очистить воду от ртути,Long,Informational
+RU,Heavy Metals,мышьяк в питьевой воде,Mid,Informational
+RU,Heavy Metals,анализ воды на тяжелые металлы,Mid,Transactional
+RU,Chlorine,Хлор в воде,High,Informational
+RU,Chlorine,фильтр от хлорамина,Mid,Transactional
+RU,Chlorine,чем хлор отличается от хлорамина,Long,Informational
+RU,Chlorine,как убрать запах хлора из воды,Long,Informational
+RU,Chlorine,угольный фильтр от хлора,Mid,Transactional
+RU,Pharmaceuticals,Лекарства в воде,High,Informational
+RU,Pharmaceuticals,фильтр от гормонов в воде,Mid,Transactional
+RU,Pharmaceuticals,остатки лекарств в водопроводной воде,Mid,Informational
+RU,Pharmaceuticals,очистка от эндокринных дизрупторов,Long,Transactional
+RU,Pharmaceuticals,влияние антибиотиков в воде на здоровье,Long,Informational
+SR,PFAS,PFAS u vodi,High,Informational
+SR,PFAS,filter za PFAS,Mid,Transactional
+SR,PFAS,kako ukloniti PFAS iz vode,Long,Informational
+SR,PFAS,najbolji filter za večne hemikalije,Long,Transactional
+SR,PFAS,opasnost PFAS-a po zdravlje,Long,Informational
+SR,Microplastics,Mikroplastika u vodi,High,Informational
+SR,Microplastics,filter za mikroplastiku,Mid,Transactional
+SR,Microplastics,kako ukloniti mikroplastiku iz vode,Long,Informational
+SR,Microplastics,mikroplastika u flaširanoj vodi,Long,Informational
+SR,Microplastics,uticaj mikroplastike na zdravlje,Long,Informational
+SR,Heavy Metals,Teški metali u vodi,High,Informational
+SR,Heavy Metals,filter za olovo,Mid,Transactional
+SR,Heavy Metals,kako ukloniti živu iz vode,Long,Informational
+SR,Heavy Metals,arsen u pitkoj vodi,Mid,Informational
+SR,Heavy Metals,analiza vode na teške metale,Mid,Transactional
+SR,Chlorine,Hlor u vodi,High,Informational
+SR,Chlorine,filter za hloramin,Mid,Transactional
+SR,Chlorine,razlika između hlora i hloramina,Long,Informational
+SR,Chlorine,kako ukloniti miris hlora iz vode,Long,Informational
+SR,Chlorine,karbonski filter za hlor,Mid,Transactional
+SR,Pharmaceuticals,Ostaci lekova u vodi,High,Informational
+SR,Pharmaceuticals,filter za hormone u vodi,Mid,Transactional
+SR,Pharmaceuticals,lekovi u pitkoj vodi,Mid,Informational
+SR,Pharmaceuticals,uklanjanje endokrinitih disruptora,Long,Transactional
+SR,Pharmaceuticals,uticaj antibiotika u vodi na zdravlje,Long,Informational
