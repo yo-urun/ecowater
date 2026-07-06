@@ -1,0 +1,233 @@
+---
+// src/components/hybrid/HubEco.astro
+---
+
+<section
+  id="eco"
+  class="py-24 lg:py-36 relative overflow-hidden"
+  aria-labelledby="eco-heading"
+  style="background: linear-gradient(170deg, #F1FBF1 0%, #F8FAFC 40%, #F8FAFC 100%);"
+>
+  <!-- Subtle organic texture (from V1) -->
+  <div
+    class="absolute inset-0 pointer-events-none opacity-40"
+    style="background-image: radial-gradient(circle at 20% 50%, rgba(74, 124, 89, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(127, 179, 179, 0.08) 0%, transparent 40%);"
+    aria-hidden="true"
+  ></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-16">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-[#4A7C59]/20 rounded-full px-4 py-2 mb-6">
+          <div class="w-1.5 h-1.5 rounded-full bg-[#4A7C59]" aria-hidden="true"></div>
+          <span class="text-[#4A7C59] text-xs font-mono font-semibold uppercase tracking-widest">Hub 03 — Eco</span>
+        </div>
+        <h2 id="eco-heading" class="font-serif text-4xl lg:text-5xl text-slate-900 text-balance">
+          The Last Bottle<br />
+          <span class="italic text-[#4A7C59]">You'll Ever Buy</span>
+        </h2>
+      </div>
+      <div class="lg:pt-16">
+        <p class="text-slate-600 text-lg leading-relaxed">
+          1 million plastic bottles are purchased every minute globally. A single family switching to EcovodaLife removes the equivalent of 40 metric tons of plastic from circulation over a 10-year period.
+        </p>
+      </div>
+    </div>
+
+    <!-- Global Impact Counter (V1) -->
+    <div class="bg-[#002B49] text-white rounded-3xl p-8 lg:p-12 mb-16 shadow-xl">
+      <div class="text-center mb-10">
+        <div class="text-white/50 text-xs font-mono uppercase tracking-widest mb-2">Real-Time Global Counter</div>
+        <div class="font-serif text-2xl text-white/80">Plastic Bottles Saved by EcovodaLife Families</div>
+      </div>
+
+      <div class="text-center mb-10">
+        <div
+          id="global-bottle-counter"
+          class="font-mono text-6xl lg:text-8xl font-bold bg-gradient-to-r from-[#7FB3B3] to-[#AEE0B5] bg-clip-text text-transparent"
+          aria-label="Bottles saved counter"
+        >
+          0
+        </div>
+        <div class="text-white/40 text-sm font-mono mt-2 uppercase tracking-widest">Bottles &amp; Counting</div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {[
+          { value: 847, suffix: "K", label: "Active Households" },
+          { value: 12, suffix: "M", label: "Tonnes CO₂ Offset" },
+          { value: 2, suffix: "B+", label: "Liters Purified" },
+          { value: 38, suffix: "K", label: "Trees Equivalent" },
+        ].map((item) => (
+          <div class="text-center p-4 rounded-2xl bg-white/5 border border-white/10">
+            <div class="font-mono text-2xl lg:text-3xl font-bold text-white flex items-baseline justify-center gap-1">
+              <span class="counter-stat" data-target={item.value}>0</span>
+              <span class="text-lg">{item.suffix}</span>
+            </div>
+            <div class="text-white/40 text-xs font-mono uppercase tracking-wider mt-1">{item.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Household Impact (V2) -->
+    <div class="rounded-3xl bg-gradient-to-br from-[#F1FBF1] to-[#E8F5E9] border border-[#4A7C59]/20 p-8 lg:p-12 mb-16 text-center">
+      <p class="font-mono text-xs text-[#4A7C59] tracking-[0.2em] uppercase mb-4">Your Household Impact — Year One</p>
+      <div class="flex flex-col items-center gap-2">
+        <div class="flex items-baseline gap-3">
+          <span class="font-sans font-bold text-5xl lg:text-6xl text-[#4A7C59] tabular-nums">1,460</span>
+          <span class="font-sans text-xl font-light text-[#4A7C59]/70">Plastic Bottles</span>
+        </div>
+        <span class="font-sans text-lg text-slate-600 font-light">saved from landfills and oceans</span>
+      </div>
+      <div class="mt-8 w-full bg-[#4A7C59]/10 rounded-full h-2 max-w-2xl mx-auto">
+        <div
+          class="h-2 rounded-full bg-[#4A7C59] transition-all duration-[2s]"
+          style="width: 97%"
+        ></div>
+      </div>
+      <div class="flex justify-between mt-1 max-w-2xl mx-auto">
+        <span class="font-mono text-[10px] text-slate-400">0</span>
+        <span class="font-mono text-[10px] text-[#4A7C59]">97% reduction in plastic usage</span>
+      </div>
+    </div>
+
+    <!-- Sustainable habits gallery (Mixed) -->
+    <div>
+      <h3 class="font-serif text-2xl text-slate-900 mb-8 text-center font-light">
+        The <span class="italic">Zero-Waste</span> Home System
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {[
+          {
+            title: "Refill, Never Buy",
+            desc: "A single EcovodaLife system replaces 8,000 single-use bottles per year per household.",
+            img: "https://images.unsplash.com/photo-1605600611284-297667437b63?auto=format&fit=crop&q=80&w=400",
+            stat: "8,000",
+            statLabel: "bottles / year",
+          },
+          {
+            title: "Glass & Stainless",
+            desc: "Pair your system with glass or stainless steel vessels. Leach nothing. Lose nothing.",
+            img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400",
+            stat: "0",
+            statLabel: "microplastics leached",
+          },
+          {
+            title: "Compostable Filters",
+            desc: "Our filter media is certified compostable — end of life doesn't mean end of cycle.",
+            img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=400",
+            stat: "100%",
+            statLabel: "compostable cartridges",
+          },
+          {
+            title: "Carbon Neutral Shipping",
+            desc: "Every unit is shipped in recycled packaging with verified carbon offset certificates.",
+            img: "https://images.unsplash.com/photo-1532996122753-d8355f397157?auto=format&fit=crop&q=80&w=400",
+            stat: "Net 0",
+            statLabel: "delivery footprint",
+          },
+        ].map((habit) => (
+          <div
+            class="group rounded-3xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src={habit.img}
+                alt={habit.imgAlt}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 60%)"
+                aria-hidden="true"
+              ></div>
+              <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
+                <div class="text-lg font-mono font-bold text-[#4A7C59] leading-none">{habit.stat}</div>
+                <div class="text-[10px] font-mono text-slate-500 uppercase tracking-wide leading-tight">{habit.statLabel}</div>
+              </div>
+            </div>
+            <div class="p-5">
+              <h4 class="font-sans font-semibold text-slate-900 mb-2">{habit.title}</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">{habit.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- B Corp pledge (Mixed) -->
+    <div class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 p-6 rounded-2xl border border-[#4A7C59]/20 bg-white/60 backdrop-blur-sm">
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full border-2 border-[#4A7C59] flex items-center justify-center flex-shrink-0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="text-[#4A7C59]">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-sans font-semibold text-slate-900">Certified B Corporation</div>
+          <div class="text-sm text-slate-600">Verified to the highest standards of social and environmental performance.</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-sm font-mono text-slate-500">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-[#4A7C59]" aria-hidden="true"></div>
+          <span>1% For The Planet</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-[#007AFF]" aria-hidden="true"></div>
+          <span>Climate Neutral</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initEcoCounters() {
+    const globalCounter = document.getElementById('global-bottle-counter');
+    const stats = document.querySelectorAll('.counter-stat');
+    
+    if (globalCounter) {
+      let count = 247891043;
+      const target = 247900000;
+      const update = () => {
+        count += Math.floor(Math.random() * 10);
+        globalCounter.textContent = count.toLocaleString();
+        requestAnimationFrame(update);
+      };
+      update();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.getAttribute('data-target') || '0');
+          let current = 0;
+          const duration = 2000;
+          const step = 16;
+          const increment = target / (duration / step);
+          
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              (entry.target as HTMLElement).textContent = target.toLocaleString();
+              clearInterval(timer);
+            } else {
+              (entry.target as HTMLElement).textContent = Math.floor(current).toLocaleString();
+            }
+          }, step);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    stats.forEach(s => observer.observe(s));
+  }
+
+  document.addEventListener('astro:page-load', initEcoCounters);
+  initEcoCounters();
+</script>

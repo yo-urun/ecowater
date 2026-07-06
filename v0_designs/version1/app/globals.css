@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* EcovodaLife Brand Palette */
+  --background: oklch(0.99 0.003 220);          /* Medical White */
+  --foreground: oklch(0.12 0.02 240);            /* Deep Navy */
+  --card: oklch(0.98 0.005 215);
+  --card-foreground: oklch(0.12 0.02 240);
+  --popover: oklch(0.99 0.003 220);
+  --popover-foreground: oklch(0.12 0.02 240);
+
+  /* Pure Blue — primary brand */
+  --primary: oklch(0.52 0.19 240);
+  --primary-foreground: oklch(0.99 0 0);
+
+  /* Soft Teal — secondary wellness */
+  --secondary: oklch(0.92 0.04 195);
+  --secondary-foreground: oklch(0.25 0.06 220);
+
+  /* Muted — soft backgrounds */
+  --muted: oklch(0.96 0.01 210);
+  --muted-foreground: oklch(0.48 0.04 225);
+
+  /* Nature Green — eco accent */
+  --accent: oklch(0.58 0.13 158);
+  --accent-foreground: oklch(0.99 0 0);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.90 0.02 220);
+  --input: oklch(0.92 0.02 220);
+  --ring: oklch(0.52 0.19 240);
+  --radius: 0.75rem;
+
+  /* Brand-specific tokens */
+  --ocean-deep: oklch(0.22 0.08 240);
+  --ocean-mid: oklch(0.38 0.14 235);
+  --pure-blue: oklch(0.52 0.19 240);
+  --sky-blue: oklch(0.72 0.11 225);
+  --soft-teal: oklch(0.78 0.09 195);
+  --pale-teal: oklch(0.94 0.04 195);
+  --nature-green: oklch(0.58 0.13 158);
+  --nature-light: oklch(0.92 0.05 158);
+  --medical-white: oklch(0.99 0.003 220);
+  --warm-white: oklch(0.98 0.008 90);
+  --text-deep: oklch(0.12 0.02 240);
+  --text-mid: oklch(0.35 0.04 230);
+  --text-muted: oklch(0.55 0.03 225);
+
+  --sidebar: oklch(0.97 0.005 215);
+  --sidebar-foreground: oklch(0.12 0.02 240);
+  --sidebar-primary: oklch(0.52 0.19 240);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.92 0.04 195);
+  --sidebar-accent-foreground: oklch(0.25 0.06 220);
+  --sidebar-border: oklch(0.90 0.02 220);
+  --sidebar-ring: oklch(0.52 0.19 240);
+}
+
+@theme inline {
+  --font-sans: 'DM Sans', 'DM Sans Fallback', sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-mono: 'DM Mono', 'Geist Mono Fallback', monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 8px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Brand tokens exposed to Tailwind */
+  --color-ocean-deep: var(--ocean-deep);
+  --color-ocean-mid: var(--ocean-mid);
+  --color-pure-blue: var(--pure-blue);
+  --color-sky-blue: var(--sky-blue);
+  --color-soft-teal: var(--soft-teal);
+  --color-pale-teal: var(--pale-teal);
+  --color-nature-green: var(--nature-green);
+  --color-nature-light: var(--nature-light);
+  --color-medical-white: var(--medical-white);
+  --color-warm-white: var(--warm-white);
+  --color-text-deep: var(--text-deep);
+  --color-text-mid: var(--text-mid);
+  --color-text-muted: var(--text-muted);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.96 0.01 210);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.72 0.11 225);
+  border-radius: 3px;
+}

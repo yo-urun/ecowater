@@ -1,0 +1,181 @@
+---
+// src/components/hybrid/HubWellness.astro
+---
+
+<section
+  id="wellness"
+  class="py-24 lg:py-36 relative overflow-hidden bg-gradient-to-b from-[#F1F8F8] via-[#F8FAFC] to-[#F1F8F8]"
+  aria-labelledby="wellness-heading"
+>
+  <!-- Organic background shapes (from V2) -->
+  <div
+    class="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none opacity-30"
+    style="background: radial-gradient(ellipse at center, rgba(127, 179, 179, 0.3) 0%, transparent 70%); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none opacity-20"
+    style="background: radial-gradient(ellipse at center, rgba(0, 122, 204, 0.3) 0%, transparent 70%); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;"
+    aria-hidden="true"
+  ></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-[#7FB3B3]/30 rounded-full px-4 py-2 mb-6">
+        <div class="w-1.5 h-1.5 rounded-full bg-[#7FB3B3]" aria-hidden="true"></div>
+        <span class="text-[#007AFF] text-xs font-mono font-semibold uppercase tracking-widest">Hub 02 — Wellness</span>
+      </div>
+      <h2 id="wellness-heading" class="font-serif text-4xl lg:text-5xl text-slate-900 text-balance mb-4 font-light">
+        Water as a Wellness <span class="italic text-[#007AFF]">Protocol</span>
+      </h2>
+      <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+        Biohackers, longevity researchers, and elite athletes understand what most people overlook — the medium matters as much as the molecule.
+      </p>
+    </div>
+
+    <!-- Biohack Pillars (from V2) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-16">
+      {[
+        { icon: "⬡", label: "Mineral Balance", value: "Ca²⁺ Mg²⁺ K⁺ Na⁺" },
+        { icon: "◎", label: "pH Optimized", value: "7.2 — 7.8 range" },
+        { icon: "◈", label: "Low TDS", value: "< 30 ppm output" },
+        { icon: "◉", label: "ORP Negative", value: "Antioxidant potential" },
+      ].map((p) => (
+        <div class="rounded-2xl border border-[#7FB3B3]/30 bg-white/60 backdrop-blur-sm p-5 transition-all hover:border-[#7FB3B3]/60">
+          <div class="font-mono text-2xl text-[#7FB3B3] mb-3">{p.icon}</div>
+          <div class="font-mono text-[10px] text-slate-500 tracking-[0.15em] uppercase mb-1">{p.label}</div>
+          <div class="font-sans font-semibold text-sm text-slate-900">{p.value}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Benefits cards (V1 Content + V2 Layout) -->
+    <div class="space-y-6 mb-20">
+      {[
+        {
+          title: "Cellular Hydration",
+          subtitle: "Biohacking Protocol",
+          quote: "Water with optimal mineral ratios enters cells up to 3× faster than standard filtered water, amplifying every biochemical reaction in your body.",
+          metric: "3×",
+          metricLabel: "Faster Cellular Absorption",
+          img: "https://images.unsplash.com/photo-1559839734-2b71f17396c8?auto=format&fit=crop&q=80&w=800",
+          color: "from-[#7FB3B3]/20 to-transparent",
+          accent: "bg-[#7FB3B3]/20 text-[#007AFF]",
+        },
+        {
+          title: "Skin & Hair Renewal",
+          subtitle: "Dermatological Impact",
+          quote: "Chlorine and hard water minerals strip the skin's lipid barrier. EcovodaLife's Ion Exchange delivers water as your body recognizes it — pure.",
+          metric: "89%",
+          metricLabel: "Users Report Better Skin",
+          img: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800",
+          color: "from-[#007AFF]/10 to-transparent",
+          accent: "bg-[#007AFF]/10 text-[#007AFF]",
+        },
+        {
+          title: "Cognitive Performance",
+          subtitle: "Neuro-Optimization",
+          quote: "Even mild dehydration of 1–2% body weight impairs focus, memory, and reaction time. Medical-grade purity ensures every sip counts.",
+          metric: "14%",
+          metricLabel: "Cognitive Boost in Studies",
+          img: "https://images.unsplash.com/photo-1507413245164-6160d8298731?auto=format&fit=crop&q=80&w=800",
+          color: "from-[#4A7C59]/10 to-transparent",
+          accent: "bg-[#4A7C59]/10 text-[#4A7C59]",
+        },
+      ].map((benefit, i) => {
+        const isEven = i % 2 === 0;
+        return (
+          <div
+            class={`group grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-500 ${!isEven ? "lg:grid-flow-dense" : ""}`}
+          >
+            {/* Image side */}
+            <div class={`relative overflow-hidden min-h-[260px] lg:min-h-[320px] ${!isEven ? "lg:col-start-2" : ""}`}>
+              <img
+                src={benefit.img}
+                alt={benefit.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div
+                class={`absolute inset-0 bg-gradient-to-r ${benefit.color}`}
+                aria-hidden="true"
+              ></div>
+              <div class="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3">
+                <div class="text-2xl font-sans font-bold text-slate-900">{benefit.metric}</div>
+                <div class="text-xs font-mono text-slate-500 uppercase tracking-wider">{benefit.metricLabel}</div>
+              </div>
+            </div>
+
+            {/* Text side */}
+            <div class="flex flex-col justify-center p-8 lg:p-12">
+              <div class={`inline-flex self-start items-center gap-1.5 text-xs font-mono font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4 ${benefit.accent}`}>
+                {benefit.subtitle}
+              </div>
+              <h3 class="font-serif text-2xl lg:text-3xl text-slate-900 mb-4 font-light">{benefit.title}</h3>
+              <blockquote class="font-serif italic text-lg text-slate-600 leading-relaxed border-l-2 border-[#7FB3B3] pl-4">
+                {`"${benefit.quote}"`}
+              </blockquote>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Mineral Optimization Panel (from V1) -->
+    <div class="bg-white rounded-3xl border border-slate-200 p-8 lg:p-12 shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="text-[#007AFF] text-xs font-mono font-semibold uppercase tracking-widest mb-3">Precision Remineralization</div>
+          <h3 class="font-serif text-3xl text-slate-900 mb-4 font-light">
+            The Perfect<br />
+            <span class="italic">Mineral Signature</span>
+          </h3>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            After removing contaminants, our post-RO mineralization stage re-introduces essential electrolytes in bioavailable form — calibrated to WHO optimal health standards.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="flex -space-x-2">
+              {["bg-[#7FB3B3]", "bg-[#007AFF]", "bg-[#4A7C59]"].map((c, i) => (
+                <div class={`w-8 h-8 rounded-full ${c} border-2 border-white`} aria-hidden="true"></div>
+              ))}
+            </div>
+            <span class="text-sm text-slate-500 font-mono">5 essential minerals balanced</span>
+          </div>
+        </div>
+
+        <!-- Mineral bars -->
+        <div class="space-y-4" role="list" aria-label="Mineral optimization levels">
+          {[
+            { name: "Magnesium", level: 85, benefit: "Muscle recovery", color: "bg-[#7FB3B3]" },
+            { name: "Calcium", level: 72, benefit: "Bone density", color: "bg-[#007AFF]" },
+            { name: "Potassium", level: 68, benefit: "Heart rhythm", color: "bg-[#4A7C59]" },
+            { name: "Silica", level: 55, benefit: "Collagen synthesis", color: "bg-[#7FB3B3]" },
+            { name: "Bicarbonate", level: 90, benefit: "pH balance", color: "bg-[#007AFF]" },
+          ].map((mineral) => (
+            <div key={mineral.name} role="listitem">
+              <div class="flex items-center justify-between mb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-sans font-medium text-slate-900">{mineral.name}</span>
+                  <span class="text-xs font-mono text-slate-500">— {mineral.benefit}</span>
+                </div>
+                <span class="text-xs font-mono font-semibold text-[#007AFF]">{mineral.level}%</span>
+              </div>
+              <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div
+                  class={`h-full ${mineral.color} rounded-full transition-all duration-700`}
+                  style={{ width: `${mineral.level}%` }}
+                  role="progressbar"
+                  aria-valuenow={mineral.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-label={`${mineral.name} at ${mineral.level}% optimal level`}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

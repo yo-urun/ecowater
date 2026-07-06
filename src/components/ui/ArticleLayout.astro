@@ -1,0 +1,102 @@
+---
+/**
+ * ArticleLayout Component - v0 Style
+ * Structured layout for cluster-based articles.
+ * 
+ * Props:
+ * - toc: Array of { label: string, href: string }
+ * - lsiLinks: Array of { label: string, href: string }
+ * - title: Article title
+ * - description: SEO description/lead paragraph
+ */
+
+interface TOCItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  toc: TOCItem[];
+  lsiLinks: TOCItem[];
+}
+
+const { title, description, toc, lsiLinks } = Astro.props;
+---
+
+<article class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
+  <!-- Header Section -->
+  <header class="mb-12 max-w-3xl">
+    <h1 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
+      {title}
+    </h1>
+    <p class="text-xl text-slate-600 leading-relaxed">
+      {description}
+    </p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <!-- Table of Contents (Left Sidebar) -->
+    <aside class="hidden lg:block lg:col-span-3 sticky top-24 h-fit">
+      <nav class="border-l border-slate-200 pl-6">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">
+          Contents
+        </h2>
+        <ul class="space-y-3">
+          {toc.map((item) => (
+            <li>
+              <a 
+                href={item.href} 
+                class="text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200 block py-1"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="col-span-1 lg:col-span-6">
+      <div class="prose prose-slate max-w-none">
+        <slot />
+      </div>
+    </div>
+
+    <!-- LSI Sidebar (Right Sidebar) -->
+    <aside class="col-span-1 lg:col-span-3 space-y-8">
+      <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4">
+          Related Guides
+        </h2>
+        <ul class="space-y-4">
+          {lsiLinks.map((link) => (
+            <li>
+              <a 
+                href={link.href} 
+                class="group flex items-center text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
+              >
+                <span class="mr-2 text-slate-300 group-hover:text-slate-400 transition-colors">→</span>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Call to Action Box -->
+      <div class="p-6 bg-slate-900 rounded-2xl text-white shadow-xl shadow-slate-200">
+        <h3 class="text-lg font-semibold mb-2">Ready to upgrade?</h3>
+        <p class="text-slate-400 text-sm mb-4">Find the perfect water filter for your home today.</p>
+        <a 
+          href="/catalog" 
+          class="block text-center py-2 px-4 bg-white text-slate-900 rounded-lg font-medium text-sm hover:bg-slate-100 transition-colors"
+        >
+          Browse Catalog
+        </a>
+      </div>
+    </aside>
+  </div>
+</article>

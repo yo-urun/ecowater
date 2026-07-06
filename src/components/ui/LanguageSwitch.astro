@@ -1,0 +1,46 @@
+---
+/**
+ * LanguageSwitch Component - v0 Style
+ * Minimal and elegant language toggle for EcovodaLife.
+ * 
+ * Props:
+ * - currentLang: The active language code (e.g., 'en', 'sr', 'ru')
+ * - languages: Array of { code: string, label: string }
+ */
+
+interface LangOption {
+  code: string;
+  label: string;
+}
+
+interface Props {
+  currentLang: string;
+  languages: LangOption[];
+}
+
+const { currentLang, languages } = Astro.props;
+---
+
+<div class="inline-flex p-1 bg-slate-100 border border-slate-200 rounded-full shadow-sm">
+  {languages.map((lang) => (
+    <a 
+      href={`/${lang.code}/`} 
+      class={`
+        px-3 py-1 text-xs font-medium rounded-full transition-all duration-200
+        ${currentLang === lang.code 
+          ? 'bg-white text-slate-900 shadow-sm ring-1 ring-slate-200' 
+          : 'text-slate-500 hover:text-slate-900 hover:bg-white/50'}
+      `}
+      aria-current={currentLang === lang.code ? 'page' : undefined}
+    >
+      {lang.label}
+    </a>
+  ))}
+</div>
+
+<style>
+  /* Add a subtle animation for language switching if needed */
+  a {
+    white-space: nowrap;
+  }
+</style>

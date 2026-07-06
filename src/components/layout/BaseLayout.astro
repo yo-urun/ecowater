@@ -1,0 +1,27 @@
+---
+const { title = "Ecovodalife" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="stylesheet" href="/src/styles/global.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">SR</a>
+      <a href="/en">EN</a>
+      <a href="/ru">RU</a>
+    </nav>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <p>&copy; 2026 Ecovodalife</p>
+  </footer>
+</body>
+</html>

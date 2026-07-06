@@ -1,0 +1,14 @@
+@unocss-reset;
+@unocss;
+
+:root {
+  --primary: #0070f3;
+  --text: #333;
+  --bg: #fff;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+  font-family: sans-serif;
+}

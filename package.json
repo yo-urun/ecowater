@@ -1,0 +1,25 @@
+{
+  "name": "ecovodalife",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.1.1",
+    "@keystatic/astro": "^5.1.0",
+    "@keystatic/core": "^0.5.50",
+    "@unocss/astro": "^66.7.4",
+    "astro": "^7.0.5"
+  },
+  "devDependencies": {
+    "@unocss/preset-uno": "^66.7.4",
+    "unocss": "^66.7.4"
+  }
+}

@@ -1,0 +1,41 @@
+---
+// src/pages/hybrid.astro
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Hero from '../components/hybrid/Hero.astro';
+import HubSafety from '../components/hybrid/HubSafety.astro';
+import HubWellness from '../components/hybrid/HubWellness.astro';
+import HubEco from '../components/hybrid/HubEco.astro';
+import HubTechnology from '../components/hybrid/HubTechnology.astro';
+import HubPracticality from '../components/hybrid/HubPracticality.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>EcovodaLife — Medical-Grade Purity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:italic,wght@400;700&display=swap" rel="stylesheet">
+    <style is:global>
+      :root {
+        --font-serif: 'Playfair Display', serif;
+        --font-sans: 'Inter', sans-serif;
+      }
+      body {
+        font-family: var(--font-sans);
+        margin: 0;
+        padding: 0;
+        background-color: #F8FAFC;
+      }
+      .font-serif { font-family: var(--font-serif); }
+      .font-sans { font-family: var(--font-sans); }
+    </style>
+  </head>
+  <body>
+    <Hero />
+    <HubSafety />
+    <HubWellness />
+    <HubEco />
+    <HubTechnology />
+    <HubPracticality />
+  </body>
+</html>

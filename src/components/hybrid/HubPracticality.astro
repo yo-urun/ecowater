@@ -1,0 +1,298 @@
+---
+// src/components/hybrid/HubPracticality.astro
+---
+
+<section
+  id="practicality"
+  class="py-24 lg:py-36 bg-[#F8FAFC]"
+  aria-labelledby="practicality-heading"
+>
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-primary/8 border border-primary/20 rounded-full px-4 py-2 mb-6">
+        <div class="w-1.5 h-1.5 rounded-full bg-[#007AFF]" aria-hidden="true"></div>
+        <span class="text-[#007AFF] text-xs font-mono font-semibold uppercase tracking-widest">Hub 05 — Practicality</span>
+      </div>
+      <h2 id="practicality-heading" class="font-serif text-4xl lg:text-5xl text-slate-900 text-balance mb-4 font-light">
+        The <span class="italic text-[#007AFF]">Numbers</span> Don&apos;t Lie
+      </h2>
+      <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+        Logic, ROI, and a direct path to solving your exact water problem. No fluff, just facts.
+      </p>
+    </div>
+
+    <!-- ROI Calculator (V1 Content + V2 Polish) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+      <!-- Inputs -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 lg:p-10">
+        <h3 class="font-serif text-2xl text-slate-900 mb-2 font-light">Your Savings Calculator</h3>
+        <p class="text-slate-500 text-sm mb-8">Adjust to your household&apos;s current spending</p>
+
+        <div class="space-y-8">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <label for="bottles-slider" class="text-sm font-sans font-medium text-slate-700">
+                Bottles per month
+              </label>
+              <div class="bg-[#007AFF]/10 text-[#007AFF] text-sm font-mono font-bold px-3 py-1 rounded-lg">
+                <span id="val-bottles">60</span>
+              </div>
+            </div>
+            <input
+              id="bottles-slider"
+              type="range"
+              min={10}
+              max={200}
+              step={5}
+              value={60}
+              class="w-full h-2 bg-slate-200 rounded-full appearance-none cursor-pointer accent-[#007AFF]"
+              aria-label="Monthly bottles purchased"
+            />
+            <div class="flex justify-between text-xs font-mono text-slate-400 mt-1">
+              <span>10</span><span>200+</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <label for="price-slider" class="text-sm font-sans font-medium text-slate-700">
+                Average price per bottle ($)
+              </label>
+              <div class="bg-[#007AFF]/10 text-[#007AFF] text-sm font-mono font-bold px-3 py-1 rounded-lg">
+                $<span id="val-price">1.80</span>
+              </div>
+            </div>
+            <input
+              id="price-slider"
+              type="range"
+              min={0.5}
+              max={5}
+              step={0.1}
+              value={1.8}
+              class="w-full h-2 bg-slate-200 rounded-full appearance-none cursor-pointer accent-[#007AFF]"
+              aria-label="Price per bottle in dollars"
+            />
+            <div class="flex justify-between text-xs font-mono text-slate-400 mt-1">
+              <span>$0.50</span><span>$5.00</span>
+            </div>
+          </div>
+
+          <!-- Cost breakdown comparison -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center justify-between p-3 rounded-xl bg-red-50 border border-red-100">
+              <div>
+                <div class="text-xs font-mono text-red-500 uppercase tracking-wider">Current (Bottled)</div>
+                <div class="text-sm font-sans text-slate-900 mt-0.5">Annual spend</div>
+              </div>
+              <div class="text-xl font-mono font-bold text-red-500" id="res-bottled">$0</div>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-xl bg-[#7FB3B3]/10 border border-[#7FB3B3]/20">
+              <div>
+                <div class="text-xs font-mono text-[#4A7C59] uppercase tracking-wider">EcovodaLife</div>
+                <div class="text-sm font-sans text-slate-900 mt-0.5">System + filters / year</div>
+              </div>
+              <div class="text-xl font-mono font-bold text-[#4A7C59]">$348</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results (V1 Authority + V2 Air) -->
+      <div class="flex flex-col gap-4">
+        <div
+          class="flex-1 rounded-3xl p-8 lg:p-10 text-white flex flex-col justify-between"
+          style="background: linear-gradient(135deg, #002B49 0%, #004A75 100%)"
+        >
+          <div>
+            <div class="text-white/60 text-xs font-mono uppercase tracking-widest mb-4">Annual Savings</div>
+            <div class="font-mono text-6xl font-bold text-white leading-none mb-2" id="res-savings">$0</div>
+            <div class="text-white/70 text-sm">saved per year after switching</div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/20">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-white/50 text-xs font-mono uppercase tracking-widest mb-1">5-Year Net ROI</div>
+                <div class="font-mono text-3xl font-bold text-white" id="res-roi">$0</div>
+              </div>
+              <div>
+                <div class="text-white/50 text-xs font-mono uppercase tracking-widest mb-1">Payback Period</div>
+                <div class="font-mono text-3xl font-bold text-white" id="res-payback">—</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 flex items-center justify-between gap-4">
+          <div>
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">Bottles Eliminated</div>
+            <div class="font-mono text-2xl font-bold text-slate-900" id="res-bottles">0</div>
+            <div class="text-xs text-slate-500">plastic bottles / year</div>
+          </div>
+          <div class="w-px h-12 bg-slate-200" aria-hidden="true"></div>
+          <div>
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">CO₂ Offset</div>
+            <div class="font-mono text-2xl font-bold text-[#4A7C59]" id="res-co2">0 kg</div>
+            <div class="text-xs text-slate-500">per year</div>
+          </div>
+          <div class="w-px h-12 bg-slate-200" aria-hidden="true"></div>
+          <div>
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-1">Cost per Liter</div>
+            <div class="font-mono text-2xl font-bold text-[#007AFF]">$0.015</div>
+            <div class="text-xs text-slate-500">vs bottled</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Symptom Checker (V1 Depth + V2 Visuals) -->
+    <div>
+      <div class="text-center mb-10">
+        <h3 class="font-serif text-3xl text-slate-900 mb-3 font-light">
+          Symptom <span class="italic text-[#007AFF]">Checker</span>
+        </h3>
+        <p class="text-slate-600">Select your water problem — we&apos;ll tell you the exact solution.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {[
+          { symptom: "Limescale in kettle", cause: "Calcium & Magnesium excess", solution: "Ion Exchange Stage", severity: "moderate", fix: "Our Ion Exchange resin selectively captures Ca²⁺ and Mg²⁺ ions responsible for limescale formation, protecting appliances and preventing mineral deposits." },
+          { symptom: "Chlorine taste or smell", cause: "Municipal disinfectant residual", solution: "Activated Carbon Block", severity: "low", fix: "Catalytic carbon media eliminates chlorine, chloramine, and associated taste/odor compounds at the molecular level." },
+          { symptom: "Dry skin after showering", cause: "Chlorine + Hard Water minerals", solution: "Carbon + Ion Exchange", severity: "moderate", fix: "Combined stages remove skin-stripping chlorine and excess mineral hardness, restoring water's gentle, skin-compatible profile." },
+          { symptom: "Cloudy or turbid water", cause: "Suspended particles / sediment", solution: "Sediment Pre-Filter", severity: "high", fix: "The 5-micron sediment stage captures rust, silt, and particulate matter before it reaches your faucet or any downstream stage." },
+          { symptom: "Brown or rust-colored water", cause: "Iron oxidation in old pipes", solution: "Sediment + KDF Media", severity: "high", fix: "Physical filtration combined with KDF electrochemical media converts soluble iron to filterable particles and captures them entirely." },
+          { symptom: "Flat or metallic taste", cause: "Low mineral TDS / copper pipes", solution: "Remineralization Stage", severity: "low", fix: "Post-RO remineralization restores calcium, magnesium, and bicarbonate to optimal ratios, delivering crisp, refreshing taste." },
+        ].map((item, i) => (
+          <button
+            class="symptom-btn text-left p-5 rounded-2xl border transition-all duration-300 bg-white border-slate-200 hover:border-[#007AFF]/40 hover:shadow-sm"
+            data-index={i}
+          >
+            <div class="flex items-start justify-between mb-3">
+              <div class={`text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                item.severity === "high" ? "bg-red-100 text-red-600" : item.severity === "moderate" ? "bg-yellow-100 text-yellow-700" : "bg-green-100 text-green-700"
+              }`}>
+                {item.severity}
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="transition-transform duration-200 text-slate-400 symptom-arrow" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </div>
+
+            <h4 class="font-sans font-semibold mb-1 text-slate-900">{item.symptom}</h4>
+            <div class="text-xs font-mono mb-3 text-slate-500">Cause: {item.cause}</div>
+
+            <div class="flex items-center gap-2 py-2 px-3 rounded-xl text-xs font-mono font-semibold bg-[#007AFF]/8 text-[#007AFF]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M9 11l3 3L22 4"/>
+              </svg>
+              {item.solution}
+            </div>
+
+            <div class="symptom-detail overflow-hidden max-h-0 opacity-0 transition-all duration-300">
+              <p class="text-sm leading-relaxed pt-3 border-t border-slate-100 text-slate-600">
+                {item.fix}
+              </p>
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Final CTA (V2 Style) -->
+    <div class="mt-16 text-center">
+      <div
+        class="inline-block rounded-3xl p-px"
+        style="background: linear-gradient(135deg, #002B49, #7FB3B3, #4A7C59)"
+      >
+        <div class="rounded-3xl bg-white px-10 py-10 lg:px-16 lg:py-12">
+          <div class="font-sans text-xs font-semibold uppercase tracking-widest text-[#007AFF] mb-3">Ready to Start?</div>
+          <h3 class="font-serif text-3xl lg:text-4xl text-slate-900 mb-4 text-balance font-light">
+            Your Water Report, Free in 60 Seconds
+          </h3>
+          <p class="text-slate-600 mb-8 max-w-lg mx-auto">
+            Enter your zip code. We analyze local EPA reports, identify your specific contaminants, and recommend the exact system for your home.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <input
+              type="text"
+              placeholder="Enter ZIP code..."
+              class="flex-1 px-5 py-3.5 rounded-full border border-slate-200 bg-slate-50 text-slate-900 font-mono text-sm focus:outline-none focus:border-[#007AFF] focus:ring-2 focus:ring-[#007AFF]/20 transition-all"
+              aria-label="ZIP code for water analysis"
+            />
+            <button class="bg-[#007AFF] text-white text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-[#0066CC] transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+              Analyze My Water
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initPracticalityHub() {
+    const bottlesSlider = document.getElementById('bottles-slider') as HTMLInputElement;
+    const priceSlider = document.getElementById('price-slider') as HTMLInputElement;
+    
+    const valBottles = document.getElementById('val-bottles');
+    const valPrice = document.getElementById('val-price');
+    
+    const resBottled = document.getElementById('res-bottled');
+    const resSavings = document.getElementById('res-savings');
+    const resRoi = document.getElementById('res-roi');
+    const resPayback = document.getElementById('res-payback');
+    const resBottles = document.getElementById('res-bottles');
+    const resCo2 = document.getElementById('res-co2');
+
+    function updateCalculator() {
+      const bottles = Number(bottlesSlider.value);
+      const price = Number(priceSlider.value);
+      
+      if (valBottles) valBottles.textContent = bottles;
+      if (valPrice) valPrice.textContent = price.toFixed(2);
+      
+      const annualBottled = bottles * 12 * price;
+      const ecovodaAnnual = 348;
+      const annualSavings = Math.max(annualBottled - ecovodaAnnual, 0);
+      const roi5Year = (annualSavings * 5) - 495;
+      const paybackMonths = annualSavings > 0 ? (495 / annualSavings * 12).toFixed(0) : '—';
+      
+      if (resBottled) resBottled.textContent = `$${annualBottled.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+      if (resSavings) resSavings.textContent = `$${annualSavings.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+      if (resRoi) resRoi.textContent = `$${Math.max(roi5Year, 0).toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+      if (resPayback) resPayback.textContent = paybackMonths === '—' ? '—' : `${paybackMonths}mo`;
+      if (resBottles) resBottles.textContent = (bottles * 12).toLocaleString();
+      if (resCo2) resCo2.textContent = `${(bottles * 12 * 0.082).toFixed(1)} kg`;
+    }
+
+    bottlesSlider?.addEventListener('input', updateCalculator);
+    priceSlider?.addEventListener('input', updateCalculator);
+    
+    updateCalculator();
+
+    // Symptom Checker
+    document.querySelectorAll('.symptom-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const detail = btn.querySelector('.symptom-detail');
+        const arrow = btn.querySelector('.symptom-arrow');
+        const isExpanded = detail.classList.contains('max-h-32');
+        
+        document.querySelectorAll('.symptom-detail').forEach(d => {
+          d.classList.remove('max-h-32', 'opacity-100');
+          d.classList.add('max-h-0', 'opacity-0');
+        });
+        document.querySelectorAll('.symptom-arrow').forEach(a => a.classList.remove('rotate-180'));
+
+        if (!isExpanded) {
+          detail.classList.remove('max-h-0', 'opacity-0');
+          detail.classList.add('max-h-32', 'opacity-100');
+          arrow.classList.add('rotate-180');
+        }
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', initPracticalityHub);
+  initPracticalityHub();
+</script>

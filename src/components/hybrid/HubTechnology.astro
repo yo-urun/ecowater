@@ -1,0 +1,200 @@
+---
+// src/components/hybrid/HubTechnology.astro
+---
+
+<section
+  id="technology"
+  class="py-24 lg:py-36 relative overflow-hidden"
+  aria-labelledby="technology-heading"
+  style="background: linear-gradient(160deg, #002B49 0%, #004A75 50%, #007AFF 100%);"
+>
+  <div
+    class="absolute inset-0 pointer-events-none opacity-10"
+    style="background-image: linear-gradient(rgba(100,180,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(100,180,255,0.4) 1px, transparent 1px), linear-gradient(rgba(100,180,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(100,180,255,0.15) 1px, transparent 1px); background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;"
+    aria-hidden="true"
+  ></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+        <div class="w-1.5 h-1.5 rounded-full bg-[#007AFF] animate-pulse" aria-hidden="true"></div>
+        <span class="text-white/70 text-xs font-mono font-semibold uppercase tracking-widest">Hub 04 — Technology</span>
+      </div>
+      <h2 id="technology-heading" class="font-serif text-4xl lg:text-5xl text-white text-balance mb-4 font-light">
+        The <span class="italic text-[#7FB3B3]">Engineering</span> Inside
+      </h2>
+      <p class="text-white/60 text-lg leading-relaxed max-w-2xl mx-auto">
+        Six precision stages. Each independently certified. Together, they deliver water that meets surgical-grade purity standards.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <!-- Left Column -->
+      <div class="relative">
+        <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 lg:p-8">
+          <div class="flex items-center justify-between mb-6">
+            <span class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase">System Schematic — EV-Pro 6</span>
+            <span class="font-mono text-[10px] text-[#007AFF] bg-[#007AFF]/10 px-2 py-0.5 rounded">Rev. 4.0</span>
+          </div>
+          <div class="relative flex flex-col items-center">
+            <div class="self-start flex items-center gap-2 mb-2">
+              <div class="w-6 h-px bg-[#7FB3B3]/50"></div>
+              <span class="font-mono text-[10px] text-[#7FB3B3]/70 tracking-widest">INLET — TAP WATER</span>
+            </div>
+            { [
+              { id: "01", name: "Sediment", tech: "5µm PP Fiber", color: "bg-amber-400" },
+              { id: "02", name: "Carbon", tech: "Catalytic Carbon", color: "bg-slate-400" },
+              { id: "03", name: "RO Membrane", tech: "0.0001µm TFC", color: "bg-[#007AFF]" },
+              { id: "04", name: "UV-C Lamp", tech: "254nm Sterilization", color: "bg-violet-400" },
+              { id: "05", name: "Ion Exchange", tech: "Medical Resin", color: "bg-[#7FB3B3]" },
+              { id: "06", name: "Remineralize", tech: "Ca+Mg Balance", color: "bg-emerald-400" },
+            ].map((stage, i) => (
+              <div class="w-full flex flex-col items-center">
+                <button
+                  class="stage-btn w-full flex items-center gap-4 rounded-xl p-3 transition-all duration-200 border border-white/5 hover:border-white/15 bg-transparent"
+                  data-stage-id={stage.id}
+                >
+                  <div class={`w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0 font-mono text-xs font-bold text-white ${stage.color}`}>
+                    {stage.id}
+                  </div>
+                  <div class="flex-1 text-left">
+                    <div class="font-sans text-sm font-medium text-white/80">{stage.name}</div>
+                    <div class="font-mono text-[10px] text-white/30 tracking-wider">{stage.tech}</div>
+                  </div>
+                  <div class="stage-indicator w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                </button>
+                {i < 5 && <div class="w-px h-4 bg-white/10"></div>}
+              </div>
+            ))}
+            <div class="self-end flex items-center gap-2 mt-2">
+              <span class="font-mono text-[10px] text-[#4A7C59]/70 tracking-widest">OUTLET — PURE WATER</span>
+              <div class="w-6 h-px bg-[#4A7C59]/50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="flex flex-col gap-6">
+        <div id="stage-detail-card" class="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-sm p-6 lg:p-8 transition-all duration-300 min-h-[300px]">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <div>
+              <div id="stage-id-label" class="font-mono text-xs text-white/40 tracking-widest uppercase mb-1">Stage 03 of 6</div>
+              <h3 id="stage-name" class="font-serif text-2xl text-white">Reverse Osmosis</h3>
+              <div id="stage-tech" class="font-mono text-xs text-white/50 mt-1">0.0001-Micron TFC Membrane</div>
+            </div>
+            <div class="px-3 py-1.5 rounded-full border border-white/20 font-mono text-xs text-white/60">Active</div>
+          </div>
+          <div class="border-t border-white/10 pt-4">
+            <div class="font-mono text-[10px] text-white/30 tracking-widest uppercase mb-2">Removes / Function</div>
+            <p id="stage-desc" class="font-sans text-sm text-white/70 leading-relaxed">
+              The heart of the system. Forces water through a semi-permeable membrane at molecular level, rejecting 99.99% of dissolved contaminants.
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="text-white/50 text-xs font-mono uppercase tracking-widest">Efficiency</div>
+            <div class="flex-1 h-1.5 bg-white/15 rounded-full overflow-hidden">
+              <div id="stage-efficiency-bar" class="h-full bg-[#007AFF] rounded-full transition-all duration-500" style="width: 99.99%"></div>
+            </div>
+            <div id="stage-efficiency-val" class="text-white font-mono text-sm font-semibold">99.99%</div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/15 bg-white/5 backdrop-blur-sm p-6 lg:p-8">
+          <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+            <div>
+              <div class="flex items-center gap-2.5 mb-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></div>
+                <span class="text-emerald-400 text-xs font-mono uppercase tracking-widest font-semibold">Live Smart Sensor Data</span>
+              </div>
+              <h3 class="font-serif text-2xl text-white">IoT Real-Time Monitoring</h3>
+            </div>
+            <div class="bg-emerald-400/10 border border-emerald-400/30 rounded-full px-4 py-2">
+              <span class="text-emerald-400 text-xs font-mono font-semibold">All Systems Optimal</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "TDS", value: "48", unit: "ppm", status: "optimal", desc: "Total Dissolved Solids" },
+              { label: "pH", value: "7.4", unit: "", status: "optimal", desc: "Acidity / Alkalinity" },
+              { label: "ORP", value: "-85", unit: "mV", status: "good", desc: "Oxidation Reduction Potential" },
+              { label: "Flow", value: "0.8", unit: "L/min", status: "optimal", desc: "Current Output Rate" },
+              { label: "Temp", value: "18.2", unit: "°C", status: "good", desc: "Water Temperature" },
+              { label: "Filter", value: "94", unit: "%", status: "optimal", desc: "Membrane Life Remaining" },
+            ].map((metric) => (
+              <div class="bg-white/5 border border-white/15 rounded-2xl p-4 text-center hover:bg-white/10 transition-colors">
+                <div class="text-white/40 text-[10px] font-mono uppercase tracking-widest mb-2">{metric.label}</div>
+                <div class="font-mono text-2xl font-bold text-white leading-none mb-1">
+                  {metric.value}
+                  <span class="text-sm text-white/60 ml-0.5">{metric.unit}</span>
+                </div>
+                <div class="text-white/40 text-[10px] font-mono mb-2">{metric.desc}</div>
+                <div class={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider ${metric.status === "optimal" ? "bg-emerald-400/15 text-emerald-400" : "bg-blue-400/15 text-blue-400"}`}>
+                  <div class={`w-1 h-1 rounded-full ${metric.status === "optimal" ? "bg-emerald-400" : "bg-blue-400"}`} aria-hidden="true"></div>
+                  {metric.status}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const stagesData = [
+    { id: "01", name: "Sediment Pre-Filter", tech: "5-Micron PP Fiber", desc: "Captures visible particulates: rust, sand, dirt, and suspended solids. Protects downstream membranes from premature fouling.", efficiency: 99.5, color: "#fbbf24" },
+    { id: "02", name: "Activated Carbon Block", tech: "Catalytic Carbon + KDF", desc: "NSF/ANSI 42 certified. Removes chlorine, chloramine, VOCs, herbicides, and pesticides through adsorption and catalytic reaction.", efficiency: 99.8, color: "#94a3b8" },
+    { id: "03", name: "Reverse Osmosis", tech: "0.0001-Micron TFC Membrane", desc: "The heart of the system. Forces water through a semi-permeable membrane at molecular level, rejecting 99.99% of dissolved contaminants.", efficiency: 99.99, color: "#007AFF" },
+    { id: "04", name: "UV Sterilization", tech: "254nm UV-C Lamp", desc: "Hospital-grade ultraviolet disinfection chamber destroys 99.9999% of bacteria, viruses, and cysts without chemicals.", efficiency: 99.9999, color: "#a78bfa" },
+    { id: "05", name: "Ion Exchange", tech: "Medical-Grade Resin Bed", desc: "Selectively removes remaining calcium, magnesium, and heavy metal ions. Prevents limescale and optimizes TDS to ideal 50–150 ppm range.", efficiency: 98.5, color: "#7FB3B3" },
+    { id: "06", name: "Remineralization", tech: "Calcite + Magnesium Oxide", desc: "Re-introduces WHO-optimal concentrations of calcium, magnesium, and potassium. Achieves perfect 7.2–7.8 pH. Tastes like alpine spring water.", efficiency: 100, color: "#34d399" },
+  ];
+
+  function initTechHub() {
+    const btns = document.querySelectorAll('.stage-btn');
+    const idLabel = document.getElementById('stage-id-label');
+    const nameLabel = document.getElementById('stage-name');
+    const techLabel = document.getElementById('stage-tech');
+    const descLabel = document.getElementById('stage-desc');
+    const effBar = document.getElementById('stage-efficiency-bar');
+    const effVal = document.getElementById('stage-efficiency-val');
+    const card = document.getElementById('stage-detail-card');
+
+    function updateStage(index) {
+      const stage = stagesData[index];
+      if (!stage) return;
+      if (idLabel) idLabel.textContent = `Stage ${stage.id} of 6`;
+      if (nameLabel) nameLabel.textContent = stage.name;
+      if (techLabel) techLabel.textContent = stage.tech;
+      if (descLabel) descLabel.textContent = stage.desc;
+      if (effBar) {
+        effBar.style.width = `${stage.efficiency}%`;
+        effBar.style.backgroundColor = stage.color;
+      }
+      if (effVal) effVal.textContent = `${stage.efficiency}%`;
+      if (card) {
+        card.style.borderColor = stage.color;
+        card.style.backgroundColor = `${stage.color}10`;
+      }
+      btns.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('border-white', 'bg-white', 'scale-110', 'shadow-xl');
+          btn.querySelector('.stage-indicator').classList.remove('opacity-0');
+        } else {
+          btn.classList.remove('border-white', 'bg-white', 'scale-110', 'shadow-xl');
+          btn.querySelector('.stage-indicator').classList.add('opacity-0');
+        }
+      });
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener('click', () => updateStage(i));
+    });
+    updateStage(2);
+  }
+
+  document.addEventListener('astro:page-load', initTechHub);
+  initTechHub();
+</script>
