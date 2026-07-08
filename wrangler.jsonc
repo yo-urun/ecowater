@@ -2,7 +2,7 @@
   "name": "ecovodalife-web",
   "compatibility_date": "2024-01-01",
   "assets": {
-    "directory": "./dist/client/hybrid"
+    "directory": "./dist"
   },
   "account_id": "6240143d27f772418a1328a86887c808"
 }

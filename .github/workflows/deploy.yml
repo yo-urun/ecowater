@@ -25,6 +25,12 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Prepare assets
+        run: |
+          if [ -d "dist/client/hybrid" ]; then
+            cp -r dist/client/hybrid/* dist/
+          fi
+
       - name: Deploy to Cloudflare
         run: npx wrangler deploy
         env:
