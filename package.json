@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@unocss/preset-uno": "^66.7.4",
-    "unocss": "^66.7.4"
+    "unocss": "^66.7.4",
+    "wrangler": "^3.0.0"
   }
 }
