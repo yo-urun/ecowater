@@ -1,8 +1,22 @@
 {
+  // Cloudflare Workers configuration for ecovodalife-web
+  // Deployed automatically on every push to main via .github/workflows/deploy.yml
+  //
+  // account_id is supplied via the CLOUDFLARE_ACCOUNT_ID environment variable
+  // (set in GitHub repository secrets) — never hard-code it here.
+
   "name": "ecovodalife-web",
-  "compatibility_date": "2024-01-01",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/_worker.js/index.js",
   "assets": {
-    "directory": "./deploy_dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   },
-  "account_id": "6240143d27f772418a1328a86887c808"
+  "observability": {
+    "enabled": true
+  },
+  "placement": {
+    "mode": "smart"
+  }
 }
