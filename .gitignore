@@ -22,3 +22,12 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Local workspace noise (Roo Code / agent IDE artifacts)
+.roo/
+
+# Misc OS / editor artifacts
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
