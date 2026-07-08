@@ -27,8 +27,11 @@ jobs:
 
       - name: Prepare assets
         run: |
+          mkdir -p deploy_dist
           if [ -d "dist/client/hybrid" ]; then
-            cp -r dist/client/hybrid/* dist/
+            cp -r dist/client/hybrid/* deploy_dist/
+          else
+            cp -r dist/* deploy_dist/
           fi
 
       - name: Deploy to Cloudflare
