@@ -40,7 +40,11 @@ jobs:
           cache-dependency-path: './package-lock.json'
 
       - name: Install dependencies
-        run: npm ci --no-audit --no-fund
+        # --legacy-peer-deps is required because @keystatic/astro@5.1.0
+        # declares support only for astro@2..6, while this project uses astro@7.
+        # Until Keystatic publishes an Astro 7 build, we accept the peer
+        # override so CI matches local behaviour.
+        run: npm ci --legacy-peer-deps --no-audit --no-fund
 
       - name: Type-check (Astro)
         run: npx astro check
